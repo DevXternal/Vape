@@ -1,1 +1,334 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+
+local vaep = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local pages = Instance.new("Folder")
+local EXE = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local HUB = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local INFO = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local opdate = Instance.new("TextButton")
+local exe = Instance.new("TextButton")
+local hub = Instance.new("TextButton")
+local info = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+
+--Properties:
+
+vaep.Name = "vaep"
+vaep.Parent = game:GetService("CoreGui")
+vaep.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = vaep
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.538764, 0, 0.16230838, 0)
+Frame.Size = UDim2.new(0.264877647, 0, 0.0417042375, 0)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 1, 0)
+Frame_2.Size = UDim2.new(1, 0, 5.72972965, 0)
+
+pages.Name = "pages"
+pages.Parent = Frame_2
+
+EXE.Name = "EXE"
+EXE.Parent = pages
+EXE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EXE.Position = UDim2.new(0.236220479, 0, 0.0518867932, 0)
+EXE.Size = UDim2.new(0.713910758, 0, 0.872641504, 0)
+EXE.Visible = false
+
+TextBox.Parent = EXE
+TextBox.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0036764706, 0, 0, 0)
+TextBox.Size = UDim2.new(0, 271, 0, 141)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.MultiLine = true
+TextBox.Text = "-- Executor"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 28.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+TextButton.Parent = EXE
+TextButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0036764706, 0, 0.762162149, 0)
+TextButton.Size = UDim2.new(0, 271, 0, 44)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Execute"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+HUB.Name = "HUB"
+HUB.Parent = pages
+HUB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HUB.Position = UDim2.new(0.236220479, 0, 0.0518867932, 0)
+HUB.Size = UDim2.new(0.713910758, 0, 0.872641504, 0)
+HUB.Visible = false
+
+TextLabel.Parent = HUB
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.132352948, 0, 0.1027027, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 122)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "script hub being made"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+INFO.Name = "INFO"
+INFO.Parent = pages
+INFO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFO.BackgroundTransparency = 1.000
+INFO.Position = UDim2.new(0.236220479, 0, 0.0518867932, 0)
+INFO.Size = UDim2.new(0.713910758, 0, 0.872641504, 0)
+INFO.Visible = false
+
+TextLabel_2.Parent = INFO
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(1, 0, 0.270270258, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Vape made by DevXternal"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = INFO
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, 0.270270258, 0)
+TextLabel_3.Size = UDim2.new(1, 0, 0.270270258, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Running version 1"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+opdate.Name = "opdate"
+opdate.Parent = INFO
+opdate.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+opdate.BorderSizePixel = 0
+opdate.Position = UDim2.new(0.0251949541, 0, 0.537072897, 0)
+opdate.Size = UDim2.new(0.948529422, 0, 0.459459454, 0)
+opdate.Font = Enum.Font.SourceSans
+opdate.Text = "Update"
+opdate.TextColor3 = Color3.fromRGB(255, 255, 255)
+opdate.TextScaled = true
+opdate.TextSize = 14.000
+opdate.TextWrapped = true
+
+exe.Name = "exe"
+exe.Parent = Frame_2
+exe.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+exe.BorderSizePixel = 0
+exe.Position = UDim2.new(0.028871391, 0, 0.0518867932, 0)
+exe.Size = UDim2.new(0.173228353, 0, 0.202830195, 0)
+exe.Font = Enum.Font.SourceSans
+exe.Text = "Executor"
+exe.TextColor3 = Color3.fromRGB(255, 255, 255)
+exe.TextScaled = true
+exe.TextSize = 14.000
+exe.TextWrapped = true
+
+hub.Name = "hub"
+hub.Parent = Frame_2
+hub.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+hub.BorderSizePixel = 0
+hub.Position = UDim2.new(0.028871391, 0, 0.283018887, 0)
+hub.Size = UDim2.new(0.173228353, 0, 0.202830195, 0)
+hub.Font = Enum.Font.SourceSans
+hub.Text = "Script hub"
+hub.TextColor3 = Color3.fromRGB(255, 255, 255)
+hub.TextScaled = true
+hub.TextSize = 14.000
+hub.TextWrapped = true
+
+info.Name = "info"
+info.Parent = Frame_2
+info.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+info.BorderSizePixel = 0
+info.Position = UDim2.new(0.028871391, 0, 0.514150977, 0)
+info.Size = UDim2.new(0.173228353, 0, 0.202830195, 0)
+info.Font = Enum.Font.SourceSans
+info.Text = "Info"
+info.TextColor3 = Color3.fromRGB(255, 255, 255)
+info.TextScaled = true
+info.TextSize = 14.000
+info.TextWrapped = true
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextLabel_4.BorderColor3 = Color3.fromRGB(49, 49, 49)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Vape"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0.902887166, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0.0971128643, 0, 1, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = vaep
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.Position = UDim2.new(0.819591999, 0, 0.880297542, 0)
+TextButton_3.Size = UDim2.new(0.139043376, 0, 0.0563570783, 0)
+TextButton_3.Visible = false
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Open VAPE"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+-- Scripts:
+
+local function UJIMERZ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.Activated:Connect(function()
+		assert(loadstring(script.Parent.Parent.TextBox.Text))
+	end)
+end
+coroutine.wrap(UJIMERZ_fake_script)()
+local function LMZHI_fake_script() -- opdate.LocalScript 
+	local script = Instance.new('LocalScript', opdate)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent:Destroy()
+		game.StarterGui:SetCore("ChatMakeSystemMessage", {
+			Text = "Updating Vape..."
+		})
+		wait(1)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DevXternal/Vape/main/source"))()
+	end)
+end
+coroutine.wrap(LMZHI_fake_script)()
+local function TVRPX_fake_script() -- exe.LocalScript 
+	local script = Instance.new('LocalScript', exe)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.pages.EXE.Visible = true
+		script.Parent.Parent.pages.HUB.Visible = false
+		script.Parent.Parent.pages.INFO.Visible = false
+	end)
+end
+coroutine.wrap(TVRPX_fake_script)()
+local function BHFID_fake_script() -- hub.LocalScript 
+	local script = Instance.new('LocalScript', hub)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.pages.EXE.Visible = false
+		script.Parent.Parent.pages.HUB.Visible = true
+		script.Parent.Parent.pages.INFO.Visible = false
+	end)
+end
+coroutine.wrap(BHFID_fake_script)()
+local function PVIORWV_fake_script() -- info.LocalScript 
+	local script = Instance.new('LocalScript', info)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.pages.EXE.Visible = false
+		script.Parent.Parent.pages.HUB.Visible = false
+		script.Parent.Parent.pages.INFO.Visible = true
+	end)
+end
+coroutine.wrap(PVIORWV_fake_script)()
+local function SFVCBP_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.TextButton.Visible = true
+	end)
+end
+coroutine.wrap(SFVCBP_fake_script)()
+local function ISVXMG_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(ISVXMG_fake_script)()
+local function JFZHECC_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.Activated:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.Frame.Visible = true
+	end)
+end
+coroutine.wrap(JFZHECC_fake_script)()
